@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/nome', function () {
     return view('welcome');
 });
+
+Route::get('/nome', [\App\Http\Controllers\StudentController::class, 'index']);
+
+
