@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Dados Escolares</h1>
-    <p> Olá, aluno {{teach}}</p>
+    <p> Olá, aluno {{$teachs}}</p>
 </body>
 </html>
