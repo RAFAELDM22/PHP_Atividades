@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Dados Escolares</h1>
-    <p> Olá, aluno {{$teachs}}</p>
+    @foreach ($teachs as $teach)
+    <p> Olá, professor {{ $teach->name}}</p>
+    @endforeach
 </body>
 </html>

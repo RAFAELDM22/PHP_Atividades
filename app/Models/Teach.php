@@ -19,11 +19,4 @@ class Teach extends Model
 
     return $this->hasMany('Subjects'::class);
   }
-
-  function teachs($teach) {
-    $teach= Teach::create([
-    'name' => 'Ricardo Amorim',
-    'rg' => '123456789',
-    ]);
-  }
 }
