@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('subjects', function (Blueprint $table) {
             $table->id();
-            $$table-> string('Portuguese');
-            $$table-> string('mathematics');
-            $$table-> string('History');
-            $$table-> string('financial education');
-            $$table-> string('Geography');
+            $table-> string('Portuguese');
+            $table-> string('mathematics');
+            $table-> string('History');
+            $table-> string('financial education');
+            $table-> string('Geography');
             $table->timestamps();
         });
     }

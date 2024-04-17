@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id();
-            $$table-> string('name');
-            $$table-> char('cpf',lenght: 11);
-            $$table-> char('rg', lenght:9);
-            $$table-> string('NumberIdentification');
+            $table-> string('name');
+            $table-> char('cpf', 11);
+            $table-> char('rg', 9);
+            $table->foreignId('subject_id')->constrained();
+            $table-> string('NumberIdentification');
             $table->timestamps();
         });
     }
